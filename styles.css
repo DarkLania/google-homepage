@@ -172,7 +172,18 @@ footer{
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    padding: 15px 0px;
+}
+
+#a-left{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+#a-right{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
 }
 
 .ref:visited{
@@ -186,4 +197,7 @@ footer{
 .ref{
     color: rgba(0,0,0,.54);
     text-decoration: none;
+    display:block;
+    white-space: nowrap;
+    padding: 15px;
 }
