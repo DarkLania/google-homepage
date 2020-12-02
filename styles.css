@@ -1,9 +1,18 @@
 /*Styles for navigation bar*/
 
+html{
+    height: 100%;
+    width: 100%;
+}
+
 body{
     margin:0;
     border:0;
     padding:0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 #header{
@@ -75,7 +84,11 @@ body{
 /*Styles for main content (logo+search-bar)*/
 
 #main-cont{
-    margin-top: 300px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    align-items: center;
 }
 
 #logo{
@@ -101,7 +114,76 @@ body{
     background-size: 18px;
 }
 
-#search-bar:active{
-    outline: 0;
-    border: 1px solid #eeeeee; 
+#search-bar:focus{
+    box-shadow: 0 0 10px 1px rgb(233,233,233);
+}
+
+#search-bar:hover{
+    box-shadow: 0 0 10px 1px rgb(233,233,233);
+}
+
+/*Styles for search buttons*/
+
+#buttons{
+    display:flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.button{
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px 18px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    border:2px solid #f8f9fa;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    color: #3c4043;
+}
+
+.button:hover{
+    cursor: pointer;
+    border:2px solid #e0e4e7;
+}
+
+/*Footer Styles*/
+
+footer{
+    display:flex;
+    flex-direction: column;
+    font-family: arial,sans-serif;
+    font-size: 15px;
+}
+
+#country{
+    background-color: rgb(236, 236, 236);
+    height: 20px;
+    padding-left: 30px;
+    padding-top:15px;
+    padding-bottom: 12px;
+    color: rgba(0,0,0,.54);
+    border-bottom:  2px solid #dadce0;
+}
+
+#links{
+    background-color: rgb(236, 236, 236);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 15px 0px;
+}
+
+.ref:visited{
+    color: inherit;
+}
+
+.ref:hover{
+    text-decoration: underline;
+}
+
+.ref{
+    color: rgba(0,0,0,.54);
+    text-decoration: none;
 }
