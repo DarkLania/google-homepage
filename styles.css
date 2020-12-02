@@ -1,8 +1,16 @@
-#header{
-    display: table;
+/*Styles for navigation bar*/
+
+body{
     margin:0;
-    padding: 0;
-    float: right;    
+    border:0;
+    padding:0;
+}
+
+#header{
+    display: flex;
+    justify-content: end;   
+    padding-top: 10px;
+    padding-right: 10px;
 }
 
 #nav-list{
@@ -62,4 +70,18 @@
     color: white;
     font-size: 14px;
     font-family: arial,sans-serif;
+}
+
+/*Styles for main content (logo+search-bar)*/
+
+#main-cont{
+    background-color: lightcoral;
+    position: relative;
+    top: 26vh;
+    
+}
+
+footer{
+    position: fixed;
+    bottom:0;
 }
