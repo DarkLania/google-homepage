@@ -75,13 +75,33 @@ body{
 /*Styles for main content (logo+search-bar)*/
 
 #main-cont{
-    background-color: lightcoral;
-    position: relative;
-    top: 26vh;
-    
+    margin-top: 300px;
 }
 
-footer{
-    position: fixed;
-    bottom:0;
+#logo{
+    text-align: center;
+}
+
+#search-box{
+    text-align: center;
+    margin-top: 20px;
+}
+
+#search-bar{
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 46px;
+    outline: 0;
+    width: 500px;
+    border-radius: 24px;
+    border: 1px solid #eeeeee;
+    background-image: url(https://www.aulagreen.com/recursos/iconos/social/12.png);
+    background-position: 12px 12px;
+    background-repeat: no-repeat;
+    background-size: 18px;
+}
+
+#search-bar:active{
+    outline: 0;
+    border: 1px solid #eeeeee; 
 }
