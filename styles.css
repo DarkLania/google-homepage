@@ -14,15 +14,21 @@
 
 .nav-el{
     display: inline-block;
+    padding: 0px 6px;
 }
 
 .nav-link{
-    font-size: 12px;
+    font-size: 13px;
     text-decoration: none;
+    font-family: arial,sans-serif;
 }
 
 .nav-link:hover{
     text-decoration: underline;
+}
+
+.nav-link:visited{
+    color: inherit;
 }
 
 #app-icon-button:hover{
@@ -32,7 +38,28 @@
 #app-icon-button{
     border-radius: 50%;
     border:none;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     height: 40px;
     cursor: pointer;
+    vertical-align: middle;
+}
+
+#login-btn:hover{
+    background-color: #3584eb;
+}
+
+#login-btn{
+    background-color: #1a73e8;
+    border: none;
+    border-radius: 6%;
+    height: 38px;
+    width: 138px;
+    vertical-align: middle;
+}
+
+#login{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-family: arial,sans-serif;
 }
